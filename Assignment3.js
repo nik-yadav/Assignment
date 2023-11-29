@@ -79,8 +79,12 @@ while(a > 0){
 
 	sum = sum + (a%10);
 	if(Math.floor(a/10) == 0){
-  	a = sum;
-    sum = 0;
+  		if(sum > 9){
+            a = sum;
+            sum = 0;
+        } else {
+            a = 0;
+        }
 	}
   else{
   a = Math.floor(a/10);
