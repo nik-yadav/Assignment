@@ -71,3 +71,19 @@ function calculate_average(total, currentValue){
   return total;
 }
 console.log(students);
+
+/*  8  */
+let a = 456;
+let sum = 0;
+while(a > 0){
+
+	sum = sum + (a%10);
+	if(Math.floor(a/10) == 0){
+  	a = sum;
+    sum = 0;
+	}
+  else{
+  a = Math.floor(a/10);
+  }
+}
+console.log(sum);
